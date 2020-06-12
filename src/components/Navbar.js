@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link } from 'react-router-dom';
+
 class Navbar extends Component {
     state = {  }
     scrollToTop = () => {
@@ -8,7 +10,7 @@ class Navbar extends Component {
     render() { 
         return (<nav>
             <ul>
-                <li><Link
+                <li><ScrollLink
                     className='link'
                     activeClass="active"
                     to="homw"
@@ -17,8 +19,8 @@ class Navbar extends Component {
                     offset={-70}
                     duration={500}
                     onClick={this.scrollToTop}
-                >Home</Link></li>
-                <li><Link
+                >Home</ScrollLink></li>
+                <li><ScrollLink
                     className='link'
                     activeClass="active"
                     to="About"
@@ -26,8 +28,8 @@ class Navbar extends Component {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                >About</Link></li>
-                <li><Link
+                >About</ScrollLink></li>
+                <li><ScrollLink
                     className='link'
                     activeClass="active"
                     to="work"
@@ -35,8 +37,8 @@ class Navbar extends Component {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                >Work</Link></li>
-                <li><Link
+                >Work</ScrollLink></li>
+                <li><ScrollLink
                     className='link'
                     activeClass="active"
                     to="contact"
@@ -44,7 +46,7 @@ class Navbar extends Component {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                >Contact</Link></li>
+                >Contact</ScrollLink></li>
             </ul>
         </nav> );
     }

@@ -14,8 +14,6 @@ body{
   text-align: center;
 }
 
-
-
 .App-header {
   position: relative;
   min-height: 100vh;
@@ -33,7 +31,16 @@ body{
   top:-0.5em;
   z-index: -100;
   color:#9352ae;
+  animation: fade 10s infinite;
 }
+
+@keyframes fade {
+  0% { opacity: 0; }
+  10% { opacity: .05; }
+  80% { opacity: 0.05; }
+  100% { opacity: 0; }
+}
+
 header{
   display: flex;
   flex-direction: row;
@@ -87,9 +94,10 @@ li .link:hover{
   -o-transition: all 0.2s ease-out;
 }
 .header-title button:hover{
+  cursor: pointer;
   opacity: 0.8;
 }
-.header-title button a{
+.header-title a button{
   font-family: 'Open Sans', sans-serif;
   color:white;
   text-decoration: none;
@@ -430,5 +438,3 @@ height: 32em;
 
 
 }
-
-

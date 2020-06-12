@@ -22,8 +22,6 @@ class Contact extends Component {
                 </ul>
         </div>
         </Fade>
-
-            <span className='footer'>Made With ❤ by <a href="http://chetanverma.com/">Chetan Verma</a></span>
         </div>);
     }
 }
