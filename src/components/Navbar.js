@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
     state = {  }

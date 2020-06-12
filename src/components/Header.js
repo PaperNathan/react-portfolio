@@ -17,9 +17,6 @@ class Header extends Component {
     componentWillUnmount() {
         clearInterval(this.wordChanger);
     }
-
-    changeStyle = () => {
-    }
     
     changeWord = () => {
         this.setState({
